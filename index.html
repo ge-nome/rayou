@@ -17,12 +17,6 @@ margin: 0;
 font-family: 'Poppins', sans-serif;
 }
 .header{
-	min-height: 100vh;
-	width: 100%;
-/* 	background-image: url(uni.jpg); */
-	background-size: cover;
-	background-position: center;
-	position: relative;
 }
 nav{
 	
@@ -300,35 +294,19 @@ nav ul li a:hover:before{
 	color: #f44336;
 	}
 
-@media screen and (max-width: 700px) and (min-width:200px){
-	
-		.logo{
-			padding: 0;
-			top: 10px;
-			display: none;
-		}
-	nav ul li a{
-		font-size: 17px;
+	@media screen and (max-width: 700px) and (min-width:200px){
+		.logo{padding: 0;top: 10px;display: none;}
+		nav ul li a{font-size: 17px;}
+		.text-box h1{font-size: 20px;}
+		.testimonial-col img{margin-left: 0px;margin-right: 15px;}
+		.row{flex-direction: column;}
+		.cta h1{font-size: 24px;}
+		.head{display:block;}
 	}
-	.text-box h1{
-		font-size: 20px;
-	}
-
-	.testimonial-col img{
-			margin-left: 0px;
-			margin-right: 15px;
-}
-.row{
-			flex-direction: column;
-}
-.cta h1{
-			font-size: 24px;
-		}
-}
 </style>
 </head>
 <body>
-<section class="header" style="position:relative;">
+<section class="header" >
 	
 <nav>
 <a href="index.html"><h1 class="logo">RAYOR</h1></a>
@@ -339,19 +317,20 @@ nav ul li a:hover:before{
 <li><a href="">Courses</a></li>
 </ul>
 </nav>
-	<div style="width:100%; height:500px; position:absolute;" >
-		<img src="uni.jpg" style="width:100%; height:100%; object-fit:cover;">
-	</div>
-<div class="text-box">
-<h1>Ray Global Technologies</h1>
-<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
- Lorem ipsum Lorem ipsum Lorem ipsum <br>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
- Lorem ipsum Lorem ipsum Lorem ipsum 
- </p>
-<a href="" class="hero-btn"> Visit Us To Know More</a>
-</div>
 </section>
-
+<div class="head" style="position:relative;">
+	<div style="width:100%; height:500px; position:absolute;" >
+		<img src="univ.jpg" style="width:100%; height:100%; object-fit:cover;">
+	</div>
+	<div class="text-box">
+		<h1>Ray Global Technologies</h1>
+		<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+		Lorem ipsum Lorem ipsum Lorem ipsum <br>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+		Lorem ipsum Lorem ipsum Lorem ipsum 
+		</p>
+		<a href="" class="hero-btn"> Visit Us To Know More</a>
+	</div>
+</div>
 
 <section class="Course">
 <h1>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
